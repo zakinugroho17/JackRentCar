@@ -1,0 +1,182 @@
+[
+    {
+      "name": "Toyota Camry",
+      "description": "Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.",
+      "imgUrl": "https://example.com/toyota-camry.jpg",
+      "location": "City A",
+      "price": 800000,
+      "typeId": 1,
+      "authorId": 1
+    },
+    {
+      "name": "Honda CR-V",
+      "description": "SUV multifungsi dengan ruang kabin yang luas dan desain yang tangguh.",
+      "imgUrl": "https://example.com/honda-cr-v.jpg",
+      "location": "City B",
+      "price": 10000000,
+      "typeId": 2,
+      "authorId": 2
+    },
+    {
+      "name": "Nissan Altima",
+      "description": "Sedan sporty dengan desain modern dan efisiensi bahan bakar yang tinggi.",
+      "imgUrl": "https://example.com/nissan-altima.jpg",
+      "location": "City C",
+      "price": 9000000,
+      "typeId": 1,
+      "authorId": 1
+    },
+    {
+      "name": "Ford Explorer",
+      "description": "SUV penuh gaya dengan performa all-wheel drive yang handal.",
+      "imgUrl": "https://example.com/ford-explorer.jpg",
+      "location": "City D",
+      "price": 1200000,
+      "typeId": 2,
+      "authorId": 2
+    },
+    {
+      "name": "Chevrolet Malibu",
+      "description": "Sedan mewah dengan teknologi canggih dan kenyamanan tinggi.",
+      "imgUrl": "https://example.com/chevrolet-malibu.jpg",
+      "location": "City E",
+      "price": 850000,
+      "typeId": 1,
+      "authorId": 1
+    },
+    {
+      "name": "Tesla Model 3",
+      "description": "Mobil listrik dengan desain futuristik dan kinerja luar biasa.",
+      "imgUrl": "https://example.com/tesla-model-3.jpg",
+      "location": "City F",
+      "price": 15000000,
+      "typeId": 1,
+      "authorId": 1
+    },
+    {
+      "name": "BMW X5",
+      "description": "SUV mewah dengan kenyamanan premium dan teknologi mutakhir.",
+      "imgUrl": "https://example.com/bmw-x5.jpg",
+      "location": "City G",
+      "price": 18000000,
+      "typeId": 1,
+      "authorId": 1
+    },
+    {
+      "name": "Audi A4",
+      "description": "Sedan premium dengan performa luar biasa dan desain yang elegan.",
+      "imgUrl": "https://example.com/audi-a4.jpg",
+      "location": "City H",
+      "price": 13000000,
+      "typeId": 1,
+      "authorId": 1
+    },
+    {
+      "name": "Mercedes-Benz C-Class",
+      "description": "Sedan mewah dengan interior yang sangat nyaman dan keamanan yang canggih.",
+      "imgUrl": "https://example.com/mercedes-benz-c-class.jpg",
+      "location": "City I",
+      "price": 20000000,
+      "typeId": 1,
+      "authorId": 2
+    },
+    {
+      "name": "Hyundai Kona",
+      "description": "SUV kompak yang ramah lingkungan dengan teknologi terbaru.",
+      "imgUrl": "https://example.com/hyundai-kona.jpg",
+      "location": "City J",
+      "price": 9500000,
+      "typeId": 2,
+      "authorId": 1
+    },
+    {
+      "name": "Volvo XC60",
+      "description": "SUV premium dengan kombinasi yang luar biasa antara gaya dan kenyamanan.",
+      "imgUrl": "https://example.com/volvo-xc60.jpg",
+      "location": "City K",
+      "price": 17000000,
+      "typeId": 2,
+      "authorId": 2
+    },
+    {
+      "name": "Kia Forte",
+      "description": "Sedan hemat bahan bakar dengan desain yang menarik.",
+      "imgUrl": "https://example.com/kia-forte.jpg",
+      "location": "City L",
+      "price": 7500000,
+      "typeId": 1,
+      "authorId": 1
+    },
+    {
+      "name": "Porsche Cayenne",
+      "description": "SUV performa tinggi dengan gaya dan kekuatan yang mengesankan.",
+      "imgUrl": "https://example.com/porsche-cayenne.jpg",
+      "location": "City M",
+      "price": 25000000,
+      "typeId": 2,
+      "authorId": 1
+    },
+    {
+      "name": "Lexus RX",
+      "description": "SUV mewah dengan kualitas material premium dan fitur canggih.",
+      "imgUrl": "https://example.com/lexus-rx.jpg",
+      "location": "City N",
+      "price": 22000000,
+      "typeId": 2,
+      "authorId": 2
+    },
+    {
+      "name": "Mazda CX-5",
+      "description": "SUV sporty dengan kinerja yang menyenangkan dan kenyamanan yang baik.",
+      "imgUrl": "https://example.com/mazda-cx-5.jpg",
+      "location": "City O",
+      "price": 11000000,
+      "typeId": 2,
+      "authorId": 1
+    },
+    {
+      "name": "Subaru Outback",
+      "description": "Wagon yang andal dengan kemampuan off-road yang baik.",
+      "imgUrl": "https://example.com/subaru-outback.jpg",
+      "location": "City P",
+      "price": 12000000,
+      "typeId": 2,
+      "authorId": 2
+    },
+    {
+      "name": "Infiniti Q50",
+      "description": "Sedan mewah dengan kabin yang elegan dan performa yang mengesankan.",
+      "imgUrl": "https://example.com/infiniti-q50.jpg",
+      "location": "City Q",
+      "price": 16000000,
+      "typeId": 1,
+      "authorId": 1
+    },
+    {
+      "name": "Jaguar F-Pace",
+      "description": "SUV premium dengan gaya yang elegan dan performa yang hebat.",
+      "imgUrl": "https://example.com/jaguar-f-pace.jpg",
+      "location": "City R",
+      "price": 230,
+      "typeId": 2,
+      "authorId": 1
+    },
+    {
+      "name": "Land Rover Discovery",
+      "description": "SUV premium dengan kemampuan off-road yang luar biasa.",
+      "imgUrl": "https://example.com/land-rover-discovery.jpg",
+      "location": "City S",
+      "price": 27000000,
+      "typeId": 2,
+      "authorId": 2
+    },
+    {
+      "name": "Tesla Model S",
+      "description": "Sedan listrik dengan kinerja luar biasa dan teknologi terkini.",
+      "imgUrl": "https://example.com/tesla-model-s.jpg",
+      "location": "City T",
+      "price": 30000000,
+      "typeId": 1,
+      "authorId": 2
+    }
+  ]
