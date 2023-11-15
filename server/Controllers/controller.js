@@ -180,6 +180,14 @@ class Controller {
         next(error)
     }
   }
+
+  static async rentTransportation(req,res,next){
+    try {
+        
+    } catch (error) {
+        next(error)
+    }
+  }
 }
 
 

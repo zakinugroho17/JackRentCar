@@ -24,6 +24,7 @@ app.use(express.json());
 app.post("/login", ControllerLogin.login)
 //pub rentcar
 // app.get("/", Controller.showHome)
+app.post("/register", ControllerLogin.register)
 app.use(authentication)
 app.post("/transportation", Controller.createRentCar) //done
 app.get("/transportation", Controller.showRentCar) //done
@@ -33,12 +34,15 @@ app.put("/transportation/:id",authorizationRentCar, Controller.updateRentCar) //
 app.delete("/transportation/:id",authorizationRentCar, Controller.deleteRentCar) //done
 
 // app.use(authentication)//middleware
-app.post("/register", authorization, ControllerLogin.register)
+
 //type
 app.post("/types", Controller.createSupport) //done
 app.get("/types", Controller.showType) //done
 app.put("/types/:id", Controller.updateType) //done
+
 app.delete("/types/:id", Controller.deleteType) //done
+//buy
+app.post("/transportation/buy/:id", Controller)
 
 
 

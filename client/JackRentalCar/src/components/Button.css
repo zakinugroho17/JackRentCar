@@ -1,0 +1,22 @@
+#button {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFD66D;
+  }
+  
+  #button button:hover {
+    background-color: #e8c363;
+  }
+  
+  #buttonId {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
