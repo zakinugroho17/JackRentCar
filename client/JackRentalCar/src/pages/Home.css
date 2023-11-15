@@ -1,0 +1,76 @@
+table {
+    margin: 20px;
+    border: 1px solid #FFD66D;
+  }
+  
+  th {
+    padding: 0 40px;
+    background-color: #FFD66D;
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  tr {
+    text-align: center;
+  }
+  
+  #table {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #action {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #action a {
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  #action #edit {
+    color: white;
+    background-color: #FFD66D;
+  }
+  
+  #action #details {
+    color: white;
+    background-color: #979D85;
+  }
+  
+  #action #delete {
+    color: white;
+    background-color: #FF603D;
+  }
+  
+  
+  #buttonAdd {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  #buttonAdd a {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #FFD66D;
+    color: white;
+  }
+  
+  #buttonAddNew {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  #buttonAddNew a{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: red;
+    color : white
+  }
+  
+  

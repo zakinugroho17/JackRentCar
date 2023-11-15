@@ -1,0 +1,27 @@
+#navbar {
+    display: flex;
+    background-color: #caccb6;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 50px;
+}
+
+#navbar #menu {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #navbar a {
+    color: #151515;
+  }
+  
+  #navbar a:hover {
+    color: white;
+  }
+  
+  #navbar #user {
+    display: flex;
+    gap : 10px
+  }
