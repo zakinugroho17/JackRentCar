@@ -1,0 +1,7 @@
+[
+  { "name": "Sedan" },
+  { "name": "SUV" },
+  { "name": "Hatchback" },
+  { "name": "Coupe" },
+  { "name": "Convertible" }
+]

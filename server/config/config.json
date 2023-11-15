@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "yakuzalordz17",
+    "database": "RentCarsDB",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "yakuzalordz17",
+    "database": "RentCarsDBTest",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
