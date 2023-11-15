@@ -1,0 +1,26 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #form {
+    padding: 20px;
+    background-color: wheat;
+    height: calc(100vh - 50px);
+  }
+  
+  form label {
+    width: 100%;
+  }
+  
+  form input {
+    padding: 20px;
+    width: 100%;
+  }
+  
+  #card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
