@@ -7,6 +7,7 @@ import {
   RouterProvider
 } from "react-router-dom";
 import Home from './pages/Home';
+import Login from './pages/Login';
 
 function mustLogin() {
   if(!localStorage.access_token){
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path : "home",
         element : <Home />
+      },
+      {
+        path : "login",
+        element : <Login />
       }
     ]
   }

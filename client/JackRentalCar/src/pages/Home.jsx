@@ -16,8 +16,67 @@ export default function Home() {
           <tr id="head">
             <th>No</th>
             <th>Name Car</th>
+            <th>Image</th>
             <th>Description</th>
+            <th>Location</th>
+            <th>Price</th>
             <th>Action</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Toyota Camry</td>
+            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
+            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
+            <td>Jakarta</td>
+            <td>8000000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Toyota Camry</td>
+            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
+            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
+            <td>Jakarta</td>
+            <td>8000000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Toyota Camry</td>
+            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
+            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
+            <td>Jakarta</td>
+            <td>8000000</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Toyota Camry</td>
+            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
+            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
+            <td>Jakarta</td>
+            <td>8000000</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Toyota Camry</td>
+            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
+            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
+            <td>Jakarta</td>
+            <td>8000000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Toyota Camry</td>
+            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
+            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
+            <td>Jakarta</td>
+            <td>8000000</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Toyota Camry</td>
+            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
+            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
+            <td>Jakarta</td>
+            <td>8000000</td>
           </tr>
         </table>
       </div>
