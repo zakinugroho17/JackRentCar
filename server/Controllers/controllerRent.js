@@ -56,7 +56,7 @@ class car{
             if(req.body.transaction_status === "settlement") {
                 const transportationId = transaction[1][0].dataValues.transportationId
                 await Transportation.update({
-                    status: "rent"
+                    status: "Rent Successfully Booked"
                 }, {
                     where: {
                         id: transportationId

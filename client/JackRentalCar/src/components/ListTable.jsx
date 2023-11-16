@@ -27,13 +27,13 @@ export default function ListTable({rentcar, i , setNotif}){
         <tr>
         <td>{i+1}</td>
         <td>{rentcar.name}</td>
-        <td><img src={rentcar.imgUrl} width={"200px"} alt="" />
+        <td><img src={rentcar.imgUrl} width={"180px"} alt="" />
             </td>
         <td>{rentcar.description}</td>
         <td>{rentcar.location}</td>
-        <td>{rentcar.price}</td>
-        <td>{rentcar.status}</td>
+        <td id="asd">{rentcar.price}</td>
         <td id='action'>
+            
           <Link to={`/transportation/edit/${rentcar.id}`} id='edit'>Edit</Link>
           <Link to={`/transportation/${rentcar.id}`} id="details">Details</Link>
           <Link to="/" id='delete' onClick={() => {

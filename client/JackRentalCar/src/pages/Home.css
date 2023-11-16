@@ -1,11 +1,11 @@
 table {
     margin: 20px;
-    border: 1px solid #FFD66D;
+    border: 1px solid #5b95ae;
   }
   
   th {
     padding: 0 40px;
-    background-color: #FFD66D;
+    background-color: #5b95ae;
   }
   
   td {
@@ -23,17 +23,27 @@ table {
   
   #action {
     display: flex;
+    flex-direction: row;
     gap: 10px;
+    height: 20vh;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
   }
   
   #action a {
     border-radius: 5px;
     padding: 5px 10px;
   }
-  
+
   #action #edit {
+    display: flex;
     color: white;
-    background-color: #FFD66D;
+    background-color: #5b95ae;
+    align-items: center;
+    
   }
   
   #action #details {
@@ -56,7 +66,7 @@ table {
   #buttonAdd a {
     border-radius: 5px;
     padding: 5px;
-    background-color: #FFD66D;
+    background-color: #5b95ae;
     color: white;
   }
   

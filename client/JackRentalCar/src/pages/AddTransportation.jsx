@@ -89,7 +89,7 @@ export default function AddTransportation() {
           addTransportation(value);
         }}
         action=""
-        style={{ padding: "50px" }}
+        style={{ padding: "50px"}}
       >
         <h1>{id ? `Edit Transportation` : `Add Transportation`}</h1>
         <label htmlFor="" style={{ width: "auto" }}>

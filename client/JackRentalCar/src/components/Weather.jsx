@@ -31,10 +31,21 @@ export default function Weather() {
     }
   }
   return <>
-  <div>
-    <h1>Our Location now : {weather?.location.name}</h1>
-    <h1>Weather : {weather?.current.condition.text} </h1>
-    <img src={weather?.current.condition.icon} alt="" />
-  </div>
+  <div id="table">
+        <table>
+          <tr id="head">
+            <th>Location</th>
+            <th>Weather</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>{weather?.location.name}</td>
+            <td>{weather?.current.condition.text}</td>
+            <td><img src={weather?.current.condition.icon} width={"40px"}alt="" />
+                 </td>
+          </tr>
+         
+        </table>
+      </div>
   </>;
 }
