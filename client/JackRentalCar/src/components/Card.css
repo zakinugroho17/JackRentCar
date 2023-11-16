@@ -7,9 +7,12 @@
   
   #card {
     width: 300px;
-    background-color: white;
+    background-color: #5b95ae;
     border-radius: 20px;
     overflow: hidden;
+    padding: 1px;
+    
+    
   }
   
   #description {
@@ -17,7 +20,7 @@
   }
   
   #card p, #card h1 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   
   #card button {

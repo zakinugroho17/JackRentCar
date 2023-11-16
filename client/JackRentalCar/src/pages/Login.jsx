@@ -36,8 +36,7 @@ export default function Login(){
     }
     return (
         <>
-      <div id="form">
-        <div>
+        <div id="form">
             <form onSubmit={(e) => {
             e.preventDefault()
             //   console.log(e, "<<< ini e")
@@ -46,12 +45,13 @@ export default function Login(){
             
             
             }}>
+            
             <h1>Login</h1>
-            <div>
+            <div className="input-text">
                 <label htmlFor="username">Email</label>
                 <input type="text" name="email" id="email"/>
             </div>
-            <div>
+            <div className="input-text">
                 <label htmlFor="password">Password</label>
                 <input type="password" name="password" id="password" />
             </div>
@@ -59,7 +59,7 @@ export default function Login(){
             <GoogleButton />
             </form>
         </div>
-      </div>
+        
     </>
     )
 }

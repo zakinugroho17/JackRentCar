@@ -10,11 +10,13 @@ export default function ListCard({rentcar}){
         <div id="card">
         <img src={rentcar.imgUrl} alt='Mobil'/>
         <div id='description'>
-            <p>{rentcar.name}</p>
+            <h1>{rentcar.name}</h1>
           <p>{rentcar.createdAt}</p>
-          <h1>{rentcar.location}</h1>
+          <h2>{rentcar.location}</h2>
           <p>{rentcar.description}</p>
+          <button>
          <Link to={`/transportation/${rentcar.id}`}>Details</Link>
+         </button>
         </div>
       </div>
         </>

@@ -49,7 +49,6 @@ export default function Home() {
             <th>Description</th>
             <th>Location</th>
             <th>Price</th>
-            <th>Status</th>
             <th>Action</th>
           </tr>
          {rentcars && rentcars.rows.map((rentcar, i) =>{

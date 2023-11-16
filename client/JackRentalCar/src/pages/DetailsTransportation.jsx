@@ -52,12 +52,34 @@ export default function DetailsTransportation() {
   }
   return (
     <>
-     
+    <div id="table">
+        <table>
+          <tr id="head">
+            <th>Name</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Location</th>
+            <th>Price</th>
+           
+          </tr>
+          <tr>
+            <td>{transportation?.data.name}</td>
+            <td>{transportation?.data.description}</td>
+            <td><img src={transportation?.data.imgUrl} width={"300px"}alt="" />
+            </td>
+            <td>{transportation?.data.location}</td>
+            <td>{transportation?.data.price}</td>
+            
+          </tr>
+         
+        </table>
+      </div>
           
 
 
-      <div>
+      {/* <div>
         <h1>{transportation?.data.name}</h1>
+       
       </div>
       <div>
         <h5>{transportation?.data.description}</h5>
@@ -70,15 +92,29 @@ export default function DetailsTransportation() {
       </div>
       <div>
         <h5>{transportation?.data.price}</h5>
-      </div>
-      <div id="button">
+      </div> */}
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center'
+      }}>
+       <h3 style={{
+        color: '#cbf078'
+       }}> {transportation?.data.status}</h3>
+       </div>
+    
+      {transportation?.data.status !== "Rent Successfully Booked" ?
+      <>
+       <div id="button">
 
       <button id="pay-button" onClick={(e)=>{
             e.preventDefault()
 
             createMidtrans()
-          }}>Pay!</button>
+          }}>Rent Now!</button>
       </div>
+      
+      </> : ""
+        }
     </>
   );
 }

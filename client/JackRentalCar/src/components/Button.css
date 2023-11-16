@@ -7,11 +7,11 @@
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
-    background-color: #FFD66D;
+    background-color: #5b95ae;
   }
   
   #button button:hover {
-    background-color: #e8c363;
+    background-color: green;
   }
   
   #buttonId {

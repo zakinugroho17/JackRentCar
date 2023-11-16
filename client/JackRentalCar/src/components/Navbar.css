@@ -1,16 +1,19 @@
 #navbar {
     display: flex;
-    background-color: #caccb6;
+    background-color: #5b95ae;
     gap: 10px;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    height: 50px;
+    height: 70px;
+}
+#navbar span{
+  color: rgb(196, 236, 218);
 }
 
 #navbar #menu {
     display: flex;
-    gap: 10px;
+    gap: 40px;
   }
   
   #navbar a {
@@ -18,10 +21,10 @@
   }
   
   #navbar a:hover {
-    color: white;
+    color: greenyellow;
   }
   
   #navbar #user {
     display: flex;
-    gap : 10px
+    gap : 20px
   }

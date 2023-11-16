@@ -12,7 +12,7 @@ export default function Card() {
   const [setNotif, notif] = useOutletContext()
  
 
-  console.log(rentcars, "<<<<<");
+ 
   useEffect(() =>{
     getTranspotation()
   }, [notif])

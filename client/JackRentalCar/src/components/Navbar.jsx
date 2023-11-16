@@ -11,7 +11,7 @@ export default function Navbar({ setNotif }) {
     <>
       <div id="navbar">
         <div>
-          <a href="#">Jack RentalCar</a>
+          <a href="#"><h1>Jack</h1> <span>RentalCars</span> </a>
         </div>
         <div id="menu">
           <div>
