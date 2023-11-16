@@ -8,7 +8,7 @@ export const GoogleButton = () => {
   return (
     <>
       <div>
-        <GoogleOAuthProvider clientId="115518923140-06mjd7pmm4imd9sa0cpoqb3dvhbnhc6f.apps.googleusercontent.com">
+        <GoogleOAuthProvider clientId={import.meta.env.VITE_CLIENT_ID}>
           <GoogleLogin
             onSuccess={async (credentialResponse) => {
               // console.log(credentialResponse.credential, "<><");

@@ -17,6 +17,9 @@ module.exports = (sequelize, DataTypes) => {
       Transportation.belongsTo(models.Type, {
         foreignKey : "typeId"
       })
+      Transportation.hasMany(models.Transaction, {
+        foreignKey : "transportationId"
+      })
     }
   }
   Transportation.init({
