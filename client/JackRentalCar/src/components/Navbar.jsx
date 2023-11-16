@@ -1,12 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useOutletContext } from "react-router-dom";
 import "./Navbar.css";
+import { useEffect } from "react";
 
-export default function Navbar() {
+export default function Navbar({ setNotif }) {
+  const navigate = useNavigate()
+  
+
+
   return (
     <>
       <div id="navbar">
         <div>
-          <a href="#">Logo</a>
+          <a href="#">Jack RentalCar</a>
         </div>
         <div id="menu">
           <div>
@@ -20,22 +25,34 @@ export default function Navbar() {
           </div>
         </div>
         <div id="user">
-          <div>
-            <Link to="/login">Login</Link>
-          </div>
-          <div>
-            <Link to="/register">Register</Link>
-          </div>
-          <div>
-            <Link
-              to="/"
-              onClick={() => {
-                localStorage.removeItem("access_token");
-              }}
-            >
-              Logout
-            </Link>
-          </div>
+            {localStorage.access_token ? 
+            <>
+              <div>
+              <Link
+                to="/login"
+                onClick={() => {
+                  localStorage.removeItem("access_token");
+                  // navigate('/login')
+                  setNotif({
+                    type : "success",
+                    message : "Logout Successfully"
+                })
+                }}
+              >
+                Logout
+              </Link>
+              </div>
+            </>
+             : 
+            <>
+              <div>
+                <Link to="/register">Register</Link>
+              </div>
+              <div>
+                <Link to="/login">Login</Link>
+              </div>
+            </>
+            }
         </div>
       </div>
     </>

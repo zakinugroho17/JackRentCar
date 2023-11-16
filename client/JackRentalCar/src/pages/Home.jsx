@@ -1,12 +1,43 @@
-// import axios from 'axios'
-// import Card from '../components/Card'
+import Card from '../components/Card';
 import './Home.css'
-// import { useEffect, useState } from 'react'
-// import ListTable from '../components/ListTable'
+import { useEffect, useState } from 'react'
+import ListTable from '../components/ListTable'
 import { Link, useOutletContext } from 'react-router-dom'
+import axios from 'axios';
+import Weather from '../components/Weather';
+
 export default function Home() {
+  const [rentcars, setRentcars] = useState(null);
+  const [setNotif, notif] = useOutletContext()
+ 
+
+  // console.log(rentcars, "<<<<<");
+  useEffect(() =>{
+    getTranspotation()
+  }, [notif])
+
+  async function getTranspotation(){
+    try {
+      const { data } = await axios({
+        method : "GET",
+        url : "http://localhost:3000/transportation",
+        headers : {
+          "Authorization" : "Bearer " + localStorage.access_token
+        }
+      })
+      setRentcars(data)
+    } catch (error) {
+      setNotif({
+        type : "delete",
+        message : error.response.data.message
+      })
+    }
+  }
   return (
     <>
+    <div>
+      <Weather />
+    </div>
       <div id="buttonAdd">
         <Link to={"/transportation/add"}>Add Rentcar</Link>
       </div>
@@ -20,71 +51,19 @@ export default function Home() {
             <th>Description</th>
             <th>Location</th>
             <th>Price</th>
+            <th>Status</th>
             <th>Action</th>
           </tr>
-          <tr>
-            <td>1</td>
-            <td>Toyota Camry</td>
-            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
-            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
-            <td>Jakarta</td>
-            <td>8000000</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Toyota Camry</td>
-            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
-            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
-            <td>Jakarta</td>
-            <td>8000000</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Toyota Camry</td>
-            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
-            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
-            <td>Jakarta</td>
-            <td>8000000</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Toyota Camry</td>
-            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
-            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
-            <td>Jakarta</td>
-            <td>8000000</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Toyota Camry</td>
-            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
-            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
-            <td>Jakarta</td>
-            <td>8000000</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Toyota Camry</td>
-            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
-            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
-            <td>Jakarta</td>
-            <td>8000000</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Toyota Camry</td>
-            <td><img src="https://placekitten.com/g/200/300" alt="" /></td>
-            <td>Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.</td>
-            <td>Jakarta</td>
-            <td>8000000</td>
-          </tr>
+         {rentcars && rentcars.rows.map((rentcar, i) =>{
+          return <ListTable rentcar={rentcar} i={i} setNotif={setNotif} />
+         })}
         </table>
       </div>
-      {/* <div id="card-container">
+      <div id="card-container">
         <Card />
         <Card />
         <Card />
-      </div> */}
+      </div>
     </>
   );
 }

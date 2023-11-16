@@ -5,9 +5,26 @@ form {
   }
   
   #form {
+    display: flex;
     padding: 20px;
-    background-color: wheat;
     height: calc(100vh - 50px);
+  }
+
+  #form > div {
+    width: 100%;
+  }
+
+  #form #form-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  #form #form-background img {
+    object-fit: cover;
+    transform: rotate(270deg);
   }
   
   form label {
@@ -15,8 +32,10 @@ form {
   }
   
   form input {
-    padding: 20px;
-    width: 100%;
+    padding: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
   }
   
   #card-container {
