@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { useParams, useOutletContext, useNavigate } from "react-router-dom"
+import Button from "../components/Button"
 
 export default function DetailsTransportation(){
     const {id} = useParams()
@@ -51,6 +52,7 @@ export default function DetailsTransportation(){
         <div>
             <h5>{transportation?.data.price}</h5>
         </div>
+        <Button value={"Rent Now"} />
         </>
     )
 }

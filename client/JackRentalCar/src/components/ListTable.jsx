@@ -27,7 +27,7 @@ export default function ListTable({rentcar, i , setNotif}){
         <tr>
         <td>{i+1}</td>
         <td>{rentcar.name}</td>
-        <td><img src={rentcar.imgUrl} alt="" />
+        <td><img src={rentcar.imgUrl} width={"200px"} alt="" />
             </td>
         <td>{rentcar.description}</td>
         <td>{rentcar.location}</td>

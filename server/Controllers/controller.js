@@ -29,7 +29,7 @@ class Controller {
     try {
         let {filter, sort, page, limit} = req.query;
         page = +page || 1;
-        limit = limit || 10;
+        limit = limit || 20;
 
         let paramsQuery = {
             limit : limit,
