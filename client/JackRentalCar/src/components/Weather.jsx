@@ -22,7 +22,7 @@ export default function Weather() {
                 },
               });
               setWeather(data)
-            console.log(position, "<<postion");
+            // console.log(position, "<<postion");
             // doSomething(position.coords.latitude, position.coords.longitude);
           });
       

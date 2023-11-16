@@ -11,6 +11,7 @@ const {createToken} = require("./helpers/jwt")
 
 const showError = require('./middleware/nextError')
 const { authentication, authorizationRentCar, authorization } = require('./middleware/auth')
+const Car = require('./Controllers/controllerRent')
 
 // const multer  = require('multer')
 // const storage = multer.memoryStorage()
@@ -58,18 +59,21 @@ app.post('/auth/google/callback', async (req, res) => {
     }
   });
 
+app.post("/rentstatus", Car.rentStatus)
 app.use(authentication)
 app.get("/checkrole", async(req,res) =>{
     try {
-        console.log(req.user);
+        // console.log(req.user);
         res.status(200).json({role : req.user.role})
     } catch (error) {
         console.log(error);
         res.status(500).json("Internal Server Error")
     }
 })
+
 app.post("/transportation", Controller.createRentCar) //done
 app.get("/transportation", Controller.showRentCar) //done
+app.post("/rental/:id", Car.rentCar)
 app.get("/transportation/:id", Controller.showRentCarById) //done
 app.put("/transportation/edit/:id",authorizationRentCar, Controller.updateRentCar) //done
 // app.patch("/transportation/:id",authorizationLodging, upload.single('imgUrl'), Controller.updateLodgingUpload) //done
