@@ -2,7 +2,7 @@
     {
       "name": "Toyota Camry",
       "description": "Sedan dengan kinerja yang handal dan nyaman untuk perjalanan sehari-hari.",
-      "imgUrl": "https://example.com/toyota-camry.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE2jTEwEP1nkouhRvJTnbN7oZmVSkIxfVXLg&usqp=CAU",
       "location": "City A",
       "price": 800000,
       "typeId": 1,
@@ -11,7 +11,7 @@
     {
       "name": "Honda CR-V",
       "description": "SUV multifungsi dengan ruang kabin yang luas dan desain yang tangguh.",
-      "imgUrl": "https://example.com/honda-cr-v.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe5dUJ4Mp2-7P77mEVOgHaKwgr2G6M91TDQw&usqp=CAU",
       "location": "City B",
       "price": 10000000,
       "typeId": 2,
@@ -20,7 +20,7 @@
     {
       "name": "Nissan Altima",
       "description": "Sedan sporty dengan desain modern dan efisiensi bahan bakar yang tinggi.",
-      "imgUrl": "https://example.com/nissan-altima.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc8F4Dm9CmeEpU2rDv8qAimolctp2OJ3u8sw&usqp=CAU",
       "location": "City C",
       "price": 9000000,
       "typeId": 1,
@@ -29,7 +29,7 @@
     {
       "name": "Ford Explorer",
       "description": "SUV penuh gaya dengan performa all-wheel drive yang handal.",
-      "imgUrl": "https://example.com/ford-explorer.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB4xNSny3AyrXB31LIISlqDvtFhkrQCu1w9g&usqp=CAU",
       "location": "City D",
       "price": 1200000,
       "typeId": 2,
@@ -38,7 +38,7 @@
     {
       "name": "Chevrolet Malibu",
       "description": "Sedan mewah dengan teknologi canggih dan kenyamanan tinggi.",
-      "imgUrl": "https://example.com/chevrolet-malibu.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQho1LDNVrKH-WnAgOFf79lUtKAnsg9KvfhUg&usqp=CAU",
       "location": "City E",
       "price": 850000,
       "typeId": 1,
@@ -47,7 +47,7 @@
     {
       "name": "Tesla Model 3",
       "description": "Mobil listrik dengan desain futuristik dan kinerja luar biasa.",
-      "imgUrl": "https://example.com/tesla-model-3.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThiGz8PU7DM4VLuNl2TaUkKGD5fIGNEYuwnQ&usqp=CAU",
       "location": "City F",
       "price": 15000000,
       "typeId": 1,
@@ -56,7 +56,7 @@
     {
       "name": "BMW X5",
       "description": "SUV mewah dengan kenyamanan premium dan teknologi mutakhir.",
-      "imgUrl": "https://example.com/bmw-x5.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHWLfXC8ia6ctDPnKar-bKUgO1hz6aILG_Yg&usqp=CAU",
       "location": "City G",
       "price": 18000000,
       "typeId": 1,
@@ -65,7 +65,7 @@
     {
       "name": "Audi A4",
       "description": "Sedan premium dengan performa luar biasa dan desain yang elegan.",
-      "imgUrl": "https://example.com/audi-a4.jpg",
+      "imgUrl": "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/audi-a4-rt-2015-0024_0.jpg?itok=7cJ1PI3F",
       "location": "City H",
       "price": 13000000,
       "typeId": 1,
@@ -74,7 +74,7 @@
     {
       "name": "Mercedes-Benz C-Class",
       "description": "Sedan mewah dengan interior yang sangat nyaman dan keamanan yang canggih.",
-      "imgUrl": "https://example.com/mercedes-benz-c-class.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkovoEA8mKkwRSlGmPxxK3BWrj50SMKNT1eg&usqp=CAU",
       "location": "City I",
       "price": 20000000,
       "typeId": 1,
@@ -83,7 +83,7 @@
     {
       "name": "Hyundai Kona",
       "description": "SUV kompak yang ramah lingkungan dengan teknologi terbaru.",
-      "imgUrl": "https://example.com/hyundai-kona.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz6lb-NjDAJPNM5fSEdKcY62vVJPlQG8g6-g&usqp=CAU",
       "location": "City J",
       "price": 9500000,
       "typeId": 2,
@@ -92,7 +92,7 @@
     {
       "name": "Volvo XC60",
       "description": "SUV premium dengan kombinasi yang luar biasa antara gaya dan kenyamanan.",
-      "imgUrl": "https://example.com/volvo-xc60.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiuUGkfsOgatwyG9NdBmfPDNGQd0bDvUfLqA&usqp=CAU",
       "location": "City K",
       "price": 17000000,
       "typeId": 2,
@@ -101,7 +101,7 @@
     {
       "name": "Kia Forte",
       "description": "Sedan hemat bahan bakar dengan desain yang menarik.",
-      "imgUrl": "https://example.com/kia-forte.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0nBpQCbT2j3lotj-OgKC74Qd1_0YlB8kpTA&usqp=CAU",
       "location": "City L",
       "price": 7500000,
       "typeId": 1,
@@ -110,7 +110,7 @@
     {
       "name": "Porsche Cayenne",
       "description": "SUV performa tinggi dengan gaya dan kekuatan yang mengesankan.",
-      "imgUrl": "https://example.com/porsche-cayenne.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6VXqKLJG0TknJFE9b6DpbmiPq4nVps_ciGQ&usqp=CAU",
       "location": "City M",
       "price": 25000000,
       "typeId": 2,
@@ -119,7 +119,7 @@
     {
       "name": "Lexus RX",
       "description": "SUV mewah dengan kualitas material premium dan fitur canggih.",
-      "imgUrl": "https://example.com/lexus-rx.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkMPtU9wuoC7M2A5LGzbaG2ScyJGtgFDmHuA&usqp=CAU",
       "location": "City N",
       "price": 22000000,
       "typeId": 2,
@@ -128,7 +128,7 @@
     {
       "name": "Mazda CX-5",
       "description": "SUV sporty dengan kinerja yang menyenangkan dan kenyamanan yang baik.",
-      "imgUrl": "https://example.com/mazda-cx-5.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_SKv4pgK5a2qoKJV0c8YHPN8L1zCTDX22AQ&usqp=CAU",
       "location": "City O",
       "price": 11000000,
       "typeId": 2,
@@ -137,7 +137,7 @@
     {
       "name": "Subaru Outback",
       "description": "Wagon yang andal dengan kemampuan off-road yang baik.",
-      "imgUrl": "https://example.com/subaru-outback.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPM8fubAd04vBHSw8i0Lc2Nxi4hpV7EFWz8w&usqp=CAU",
       "location": "City P",
       "price": 12000000,
       "typeId": 2,
@@ -146,7 +146,7 @@
     {
       "name": "Infiniti Q50",
       "description": "Sedan mewah dengan kabin yang elegan dan performa yang mengesankan.",
-      "imgUrl": "https://example.com/infiniti-q50.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd87ICEo441EEcDaPZbdaIakTaNBiqxnLdNA&usqp=CAU",
       "location": "City Q",
       "price": 16000000,
       "typeId": 1,
@@ -155,7 +155,7 @@
     {
       "name": "Jaguar F-Pace",
       "description": "SUV premium dengan gaya yang elegan dan performa yang hebat.",
-      "imgUrl": "https://example.com/jaguar-f-pace.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf9jcAc9xya4p3zF-bJ6kqDBmHSTNhm0yF9w&usqp=CAU",
       "location": "City R",
       "price": 230,
       "typeId": 2,
@@ -164,7 +164,7 @@
     {
       "name": "Land Rover Discovery",
       "description": "SUV premium dengan kemampuan off-road yang luar biasa.",
-      "imgUrl": "https://example.com/land-rover-discovery.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbqoMPDtG2Hw21efo3LQr50u219EA7y0qG_3hnmPT-_RDMeyPpuZYugGD4VOLdiCuqy1Q&usqp=CAU",
       "location": "City S",
       "price": 27000000,
       "typeId": 2,
@@ -173,7 +173,7 @@
     {
       "name": "Tesla Model S",
       "description": "Sedan listrik dengan kinerja luar biasa dan teknologi terkini.",
-      "imgUrl": "https://example.com/tesla-model-s.jpg",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyc51b6ucvSp_g_5Nfk4whbz7bL8w3GQboJA&usqp=CAU",
       "location": "City T",
       "price": 30000000,
       "typeId": 1,

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import ListTable from '../components/ListTable'
 import { Link, useOutletContext } from 'react-router-dom'
 import axios from 'axios';
+import Weather from '../components/Weather';
 
 export default function HomeUser() {
   return (
@@ -82,9 +83,11 @@ export default function HomeUser() {
          </tr>
         </table>
       </div> */}
+       <div>
+      <Weather />
+    </div>
       <div id="card-container">
         <Card />
-       
       </div>
     </>
   );

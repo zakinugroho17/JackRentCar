@@ -13,10 +13,29 @@ import HomeUser from './pages/HomeUser';
 import { element } from 'prop-types';
 import AddTransportation from './pages/AddTransportation';
 import DetailsTransportation from './pages/DetailsTransportation';
+import axios from 'axios';
 
-function mustLogin() {
+async function mustLogin() {
   if(!localStorage.access_token){
     return redirect('/login')
+  }
+  return null
+}
+
+async function mustLoginAdmin() {
+  if (!localStorage.access_token) {
+    return redirect('/login')
+  } else if (localStorage.access_token) {
+    const {data} = await axios({
+      method : "get",
+      url : "http://localhost:3000/checkrole",
+      headers : {
+        "Authorization" : "Bearer " + localStorage.access_token
+      }
+    })
+    if (data.role === "User"){
+      return redirect("/home/user")
+    } 
   }
   return null
 }
@@ -36,12 +55,12 @@ const router = createBrowserRouter([
       {
         path : "",
         element : <Home />,
-        loader : mustLogin
+        loader : mustLoginAdmin
       },
       {
         path : "home",
         element : <Home />,
-        loader : mustLogin
+        loader : mustLoginAdmin
       },
       {
         path : "login",

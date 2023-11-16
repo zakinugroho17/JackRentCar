@@ -26,6 +26,7 @@ export default function Home() {
         }
       })
       setRentcars(data)
+   
     } catch (error) {
       setNotif({
         type : "delete",
@@ -35,9 +36,6 @@ export default function Home() {
   }
   return (
     <>
-    <div>
-      <Weather />
-    </div>
       <div id="buttonAdd">
         <Link to={"/transportation/add"}>Add Rentcar</Link>
       </div>
@@ -55,15 +53,16 @@ export default function Home() {
             <th>Action</th>
           </tr>
          {rentcars && rentcars.rows.map((rentcar, i) =>{
+
           return <ListTable rentcar={rentcar} i={i} setNotif={setNotif} />
          })}
         </table>
       </div>
-      <div id="card-container">
+      {/* <div id="card-container"> */}
+        {/* <Card />
         <Card />
-        <Card />
-        <Card />
-      </div>
+        <Card /> */}
+      {/* </div> */}
     </>
   );
 }

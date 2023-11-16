@@ -16,8 +16,10 @@ const authentication = async(req,res,next) => {
         }
         const token = rowToken[1];
         const playload = compareToken(token)
+        console.log(playload, ">>>>>>>>>>>>>");
         const data = await User.findByPk(playload.id)
         req.user = data
+       
   
         next()
 
