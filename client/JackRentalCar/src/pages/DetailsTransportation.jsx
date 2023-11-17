@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams, useOutletContext, useNavigate } from "react-router-dom";
 import Button from "../components/Button";
+import SERVER from "../../constants";
 
 export default function DetailsTransportation() {
   const { id } = useParams();
@@ -17,7 +18,7 @@ export default function DetailsTransportation() {
     try {
       const { data } = await axios({
         method: "GET",
-        url: `http://localhost:3000/transportation/${id}`,
+         url: `${SERVER}/transportation/${id}`,//`http://localhost:3000/transportation/${id}`,
         headers: {
           Authorization: "Bearer " + localStorage.access_token,
         },
@@ -37,7 +38,7 @@ export default function DetailsTransportation() {
     try {
         const {data} = await axios({
             method: 'post',
-            url : `http://localhost:3000/rental/${id}`,
+            url : `${SERVER}/rental/${id}`, // http://localhost:3000/rental/${id}
             data : {
                 price : transportation.data.price   
             },

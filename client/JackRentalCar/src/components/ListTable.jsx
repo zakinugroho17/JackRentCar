@@ -1,5 +1,7 @@
 import axios from "axios"
 import { Link } from "react-router-dom"
+import SERVER from "../../constants"
+
 
 
 export default function ListTable({rentcar, i , setNotif}){
@@ -7,7 +9,7 @@ export default function ListTable({rentcar, i , setNotif}){
         try {
             await axios({
                 method : "DELETE",
-                url : `http://localhost:3000/transportation/${rentcar.id}`,
+                url : `${SERVER}/transportation/${rentcar.id}`,
                 headers : {
                     "Authorization" : "Bearer " + localStorage.access_token
                 }

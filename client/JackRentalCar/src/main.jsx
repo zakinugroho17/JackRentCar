@@ -14,6 +14,7 @@ import { element } from 'prop-types';
 import AddTransportation from './pages/AddTransportation';
 import DetailsTransportation from './pages/DetailsTransportation';
 import axios from 'axios';
+import SERVER from '../constants';
 
 async function mustLogin() {
   if(!localStorage.access_token){
@@ -26,16 +27,23 @@ async function mustLoginAdmin() {
   if (!localStorage.access_token) {
     return redirect('/login')
   } else if (localStorage.access_token) {
-    const {data} = await axios({
-      method : "get",
-      url : "http://localhost:3000/checkrole",
-      headers : {
-        "Authorization" : "Bearer " + localStorage.access_token
-      }
-    })
-    if (data.role === "User"){
-      return redirect("/home/user")
-    } 
+    try {
+      const {data} = await axios({
+        method : "get",
+        url : `${SERVER}/checkrole`,
+        headers : {
+          "Authorization" : "Bearer " + localStorage.access_token
+        }
+      })
+
+      if (data.role === "User"){
+        return redirect("/home/user")
+      } 
+    } catch (error) {
+      console.log(error);
+    }
+    
+    
   }
   return null
 }

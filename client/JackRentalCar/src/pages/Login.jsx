@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import './Login.css'
 import axios from 'axios'
 import { GoogleButton } from "./googleLogin";
+import SERVER from "../../constants";
 
 export default function Login(){
     const navigate = useNavigate()
@@ -13,7 +14,7 @@ export default function Login(){
             // console.log(value, "<<<");
             const {data} = await axios({
                 method : "POST",
-                url : "http://localhost:3000/login",
+                url : `${SERVER}/login`,
                 data : {
                     email : value.email,
                     password : value.password
