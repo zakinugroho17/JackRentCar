@@ -2,6 +2,7 @@ import axios from "axios";
 import Button from "../components/Button";
 import { useNavigate, useOutletContext, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import SERVER from "../../constants";
 
 export default function AddTransportation() {
   const [rentcars, setRentcars] = useState(null);
@@ -15,13 +16,13 @@ export default function AddTransportation() {
     }
   }, []);
 
-  console.log(rentcars)
+//   console.log(rentcars)
 
   async function getTransportation(id) {
     try {
       const { data } = await axios({
         method: "GET",
-        url: `http://localhost:3000/transportation/${id}`,
+        url: `${SERVER}/transportation/${id}`, //`http://localhost:3000/transportation/${id}`,
         headers: {
           Authorization: "Bearer " + localStorage.access_token,
         },
@@ -39,11 +40,12 @@ export default function AddTransportation() {
 
   async function addTransportation(value) {
     try {
+        // console.log("masuk");
       const { data } = await axios({
         method: id ? "PUT" : "POST",
         url: id
-          ? `http://localhost:3000/transportation/edit/${id}`
-          : "http://localhost:3000/transportation/",
+          ? `${SERVER}/transportation/edit/${id}`  // http://localhost:3000/transportation/edit/${id}
+          : `${SERVER}/transportation/`,  //"http://localhost:3000/transportation/"
         headers: {
           Authorization: "Bearer " + localStorage.access_token,
         },
@@ -56,7 +58,7 @@ export default function AddTransportation() {
           status: "Ready",
         },
       });
-
+    //   console.log(data, "<<dataa");
       setNotif({
         type: "success",
         message: id
@@ -66,6 +68,7 @@ export default function AddTransportation() {
 
       navigate("/");
     } catch (error) {
+        console.log(error);
       setNotif({
         type: "delete",
         message: error.response.data.message,
@@ -75,6 +78,7 @@ export default function AddTransportation() {
 
   return (
     <>
+    <div id="form">
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -92,21 +96,32 @@ export default function AddTransportation() {
         style={{ padding: "50px"}}
       >
         <h1>{id ? `Edit Transportation` : `Add Transportation`}</h1>
+        <div className="input-type-text">
         <label htmlFor="" style={{ width: "auto" }}>
           Name
         </label>
         <input id="name" type="text" defaultValue={rentcars?.data.name} />
+        </div>
+        <div className="input-type-text">
         <label htmlFor="">Image</label>
         <input id="imgUrl" type="text" defaultValue={rentcars?.data.imgUrl} />
+        </div>
+        <div className="input-type-text">
         <label htmlFor="">Description</label>
         <input id="description" type="text" defaultValue={rentcars?.data.description} />
+        </div>
+        <div className="input-type-text">
         <label htmlFor="">Location</label>
         <input id="location" type="text" defaultValue={rentcars?.data.location} />
+        </div>
+        <div className="input-type-number">
         <label htmlFor="">Price</label>
         <input id="price" type="number" defaultValue={rentcars?.data.price} />
+        </div>
 
         <Button value={id ? `Edit Transportation` : `Add Transportation`} />
       </form>
+      </div>
     </>
   );
 }

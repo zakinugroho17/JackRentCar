@@ -1,6 +1,7 @@
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import { useNavigate, useOutletContext } from "react-router";
 import axios from "axios";
+import SERVER from "../../constants";
 
 export const GoogleButton = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const GoogleButton = () => {
               try {
                 // console.log(credentialResponse.credential ,"cre");
                 const { data } = await axios.post(
-                  "http://localhost:3000/auth/google/callback",
+                  `${SERVER}/auth/google/callback`,
                   {
                     code: credentialResponse.credential,
                   }

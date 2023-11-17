@@ -5,6 +5,7 @@ import ListTable from '../components/ListTable'
 import { Link, useOutletContext } from 'react-router-dom'
 import axios from 'axios';
 import Weather from '../components/Weather';
+import SERVER from '../../constants';
 
 export default function Home() {
   const [rentcars, setRentcars] = useState(null);
@@ -20,7 +21,7 @@ export default function Home() {
     try {
       const { data } = await axios({
         method : "GET",
-        url : "http://localhost:3000/transportation",
+         url : `${SERVER}/transportation`,//"http://localhost:3000/transportation",
         headers : {
           "Authorization" : "Bearer " + localStorage.access_token
         }
