@@ -15,7 +15,7 @@ List of available endpoints:
 - `GET /transportation`
 - `GET /transportation/:id`
 - `PUT /transportation/edit/:id`
-- `DELETE /lodgings/:id`
+- `DELETE /transportation/:id`
 
 &nbsp;
 
