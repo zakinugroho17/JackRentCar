@@ -1,11 +1,12 @@
-const { Transportation, Type, sequelize } = require("../models");
+
+const { Transportation, Type, Transaction } = require("../models");
 // const cloudinary = require("cloudinary");
 // const { Op } = sequelize;
 
 class Controller {
   static async createRentCar(req, res, next) {
     try {
-      const { name, description, imgUrl, location, price, typeId } = req.body;
+      const { name, description, imgUrl, location, price } = req.body;
       const authorId = req.user.id
     //   console.log(req.user, "<<<")
 
@@ -15,8 +16,7 @@ class Controller {
         imgUrl,
         location,
         price,
-        typeId,
-        authorId
+        authorId,
       });
 
       res.status(201).json(transportation);
@@ -68,7 +68,7 @@ class Controller {
         const {id} = req.params
         const data = await Transportation.findByPk(id);
         if(!data){
-            throw {name : "Not Found", id}
+            throw {name : "NotFound", id}
         }
         res.status(200).json({data})
     } catch (error) {
@@ -92,7 +92,7 @@ class Controller {
         })
 
         const updateRentCar = await Transportation.findByPk(id)
-        res.status(200).json({updateRentCar})
+        res.status(200).json(updateRentCar)
     } catch (error) {
         next(error)
     }
@@ -105,11 +105,14 @@ class Controller {
             throw {name : "NotFoundId", id}
         }
         const deleteTransportation = await Transportation.findByPk(id)
-        await Transportation.destroy({
+        // console.log(deleteTransportation);
+
+        const result = await Transportation.destroy({
             where : {
                 id : id
-            }
+            },
         })
+        console.log(result);
         if(!deleteTransportation){
             throw {name : "NotFound", id}
         }

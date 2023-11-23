@@ -35,7 +35,7 @@ function showError(error,req,res,next){
             break;
         default:
             console.log(error, "<<< error 500");
-            res.status(500).json({ message : "Internal Server Error"});
+            res.status(500).json({ message : "Internal Server Error", err : error.message});
             break;
     }
 }
