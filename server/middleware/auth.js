@@ -1,5 +1,5 @@
 const {createToken, compareToken} = require('../helpers/jwt')
-const {User, Transaction} = require('../models')
+const {User, Transportation} = require('../models')
 
 const authentication = async(req,res,next) => {
     try {
@@ -16,7 +16,7 @@ const authentication = async(req,res,next) => {
         }
         const token = rowToken[1];
         const playload = compareToken(token)
-        console.log(playload, ">>>>>>>>>>>>>");
+        // console.log(playload, ">>>>>>>>>>>>>");
         const data = await User.findByPk(playload.id)
         req.user = data
        
@@ -45,10 +45,12 @@ const authorization = async(req,res,next) => {
 const authorizationRentCar = async (req,res,next) => {
     try {
         const {id} = req.params
+        // console.log(id, "<id");
         if(req.user.role === 'Admin'){
             next()
         }else {
-            const rentcar = await Transaction.findByPk(+id)
+            const rentcar = await Transportation.findByPk(+id)
+            console.log(rentcar);
             let authorId = rentcar.authorId
             if (authorId === id){
                 next()

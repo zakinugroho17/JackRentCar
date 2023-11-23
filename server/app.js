@@ -13,10 +13,6 @@ const showError = require('./middleware/nextError')
 const { authentication, authorizationRentCar, authorization } = require('./middleware/auth')
 const Car = require('./Controllers/controllerRent')
 
-// const multer  = require('multer')
-// const storage = multer.memoryStorage()
-// const upload = multer({ storage })
-
 
 
 
@@ -29,8 +25,6 @@ app.use(cors())
 
 //user
 app.post("/login", ControllerLogin.login)
-//pub rentcar
-// app.get("/", Controller.showHome)
 app.post("/register", ControllerLogin.register)
 app.post('/auth/google/callback', async (req, res) => {
     try {
@@ -76,24 +70,9 @@ app.get("/transportation", Controller.showRentCar) //done
 app.post("/rental/:id", Car.rentCar)
 app.get("/transportation/:id", Controller.showRentCarById) //done
 app.put("/transportation/edit/:id",authorizationRentCar, Controller.updateRentCar) //done
-// app.patch("/transportation/:id",authorizationLodging, upload.single('imgUrl'), Controller.updateLodgingUpload) //done
 app.delete("/transportation/:id",authorizationRentCar, Controller.deleteRentCar) //done
 
 // app.use(authentication)//middleware
-
-//type
-app.post("/types", Controller.createSupport) //done
-app.get("/types", Controller.showType) //done
-app.put("/types/:id", Controller.updateType) //done
-
-app.delete("/types/:id", Controller.deleteType) //done
-//buy
-app.post("/transportation/buy/:id", Controller)
-
-
-
-
-
 
 
 app.use(showError)
